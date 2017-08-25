@@ -5,6 +5,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<title>WeTalk</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+        $(document).ready(function (){
+            $("#buttonMenu").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section2").offset().top
+                }, 1050);
+            });
+
+						$("#buttonHeader").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section2").offset().top
+                }, 1050);
+            });
+
+						$("#nav1").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section1").offset().top
+                }, 1050);
+            });
+
+						$("#nav2").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section3").offset().top
+                }, 1050);
+            });
+
+						$("#nav3").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#contacto").offset().top
+                }, 1050);
+            });
+        });
+    </script>
 </head>
 <body>
 <header>
@@ -12,9 +46,9 @@
 		<img id="imgLogo1" src="images/Logo.png" />
 		<nav>
 			<ul style="list-style-type:none">
-				<li><a href="#">Cómo funciona</a></li>
-				<li><a href="#">Visión</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a id="nav1" href="#">Cómo funciona</a></li>
+				<li><a id="nav2" href="#">Visión</a></li>
+				<li><a id="nav3" href="#">Contacto</a></li>
 			</ul>
 		</nav>
 		<div id="divNavRight">
@@ -39,7 +73,7 @@
 </header>
 <main>
 	<section id="section1">
-		<div id="divTextoFunciona">
+		<div class="divTextoFunciona">
 			<span>¿Cómo funciona?</span>
 		</div>
 		<div id="divSteps">
@@ -61,15 +95,15 @@
 		</div>
 	</section>
 	<section id="section2">
-		<div id="divTextoForm">
-			<h2>¡Apúntate</h2>
+		<div class="divTextoFunciona">
+			<span>¡Apúntate!</span>
 		</div>
 		<div id="divForm">
 			<form>
 				<input id="inputName" type="text" name="nombre" placeholder="Tu nombre*" />
 				<input id="inputEmail" type="email" name="email" placeholder="Tu email*" />
-				<input id="inputTelefono" type="number" name="telefono" placeholder="Tu teléfono(no olvides el prefijo si no es un número español)" />
-				<input id="inputPoblación" type="text" name="poblacion" placeholder="Tu población" />
+				<input id="inputTelefono" type="tel" name="telefono" placeholder="Tu teléfono (no olvides el prefijo si no es un número español)" />
+				<input id="inputPoblacion" type="text" name="poblacion" placeholder="Tu población" />
 				<input id="inputHablas" type="text" name="idiomasHablados" placeholder="¿Qué idioma/s hablas?*" />
 				<input id="inputAprendes" type="text" name="idiomasAprendes" placeholder="¿Cuál/es quieres aprender?*" />
 				<input type="submit" value="Regístrate" />

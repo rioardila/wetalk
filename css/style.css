@@ -147,21 +147,20 @@ main {
 }
 
 #section1 {
-  height: 376px;
   width: auto;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
 }
 
-#divTextoFunciona {
+.divTextoFunciona {
   margin: 0;
   padding: 50px 0;
 }
 
-#divTextoFunciona span {
+.divTextoFunciona span {
   color: #2b2b2b;
   font-family: 'CircularStdBook';
   font-size: 30px;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 #divSteps {
@@ -200,6 +199,61 @@ main {
   font-size: 16px;
 }
 
+/**********************************/
+/************ SECTION2 ************/
+/**********************************/
+
+#section2 {
+  background-color: #f1f1f1;
+  padding: 0px 20px 0.1px 20px;
+}
+
+#divForm {
+  position: relative;
+  top: -10px;
+}
+
+input {
+  height: 30px;
+  border: 1.4px solid #7f58ad;
+  border-radius: 5px;
+  font-family: 'AkkuratLight';
+  font-size: 14px;
+  padding: 10px;
+}
+
+#inputName, #inputEmail, #inputTelefono, #inputPoblacion {
+  width: 490px;
+  margin: 20px auto;
+  display: block;
+}
+
+#inputHablas, #inputAprendes {
+  width: 222px;
+  margin: 0px 10px 20px 10px;
+  display: inline-block;
+}
+
+input:focus {
+  outline: none;
+  border: 3.2px solid #7f58ad;
+}
+
+input[type="submit"] {
+  color: #ffffff;
+  font-family: 'CircularStdBook';
+  font-size: 20px;
+  font-weight: lighter;
+  width: 141px;
+  height: 41px;
+  border: 0;
+  border-radius: 5px;
+  margin: 0px auto 40px auto;
+  display: block !important;
+  background-color: #7f58ad;
+  cursor:pointer;
+}
+
 /*RESPONSIVE*/
 @media screen and (max-width: 840px) {
   #divNav nav {
@@ -218,6 +272,12 @@ main {
 
   header {
     background-size: auto 100%;
+  }
+
+  #inputHablas, #inputAprendes {
+    width: 490px;
+    margin: 0 auto 20px auto;
+    display: block;
   }
 }
 
