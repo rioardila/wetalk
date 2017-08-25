@@ -3,25 +3,29 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<title>Titulo</title>
 </head>
 <body>
 <header>
-	<div id="divNavegacion">
-		<img src="images/logo.png">
+	<div id="divNav">
+		<img id="imgLogo1" src="images/Logo.png" />
 		<nav>
 			<ul style="list-style-type:none">
-				<a href="#"><li>Cómo funciona</li></a>
-				<a href="#"><li>Visión</li></a>
-				<a href="#"><li>Contacto</li></a>
+				<li><a href="#">Cómo funciona</a></li>
+				<li><a href="#">Visión</a></li>
+				<li><a href="#">Contacto</a></li>
 			</ul>
-			<button id="buttonMenu">Regístrate</button>
-			<span id="idiomaEs">ES</span>
-			<span id="idiomaEn">EN</span>
 		</nav>
+		<div id="divNavRight">
+				<button id="buttonMenu">Regístrate</button>
+				<div id="divLang">
+					<span id="idiomaEs">ES</span> /
+					<span id="idiomaEn">EN</span>
+				</div>
+		</div>
 	</div>
-	<div id="divTextoHeader">
+	<div id="divTextHeader">
 		<div id="divTitle">
 			<h1>Conecta, diviértete y aprende</h1>
 		</div>
@@ -37,7 +41,7 @@
 	<section id="sectionFunciona">
 		<div id="divTextoFunciona">
 			<h2>¿Cómo funciona?</h2>
-		</div>	
+		</div>
 		<div id="divPasos">
 			<div id="divPaso1">
 				<img class="imageFunciona" src="images/monitor.png">
@@ -59,7 +63,7 @@
 	<section id="sectionForm">
 		<div id="divTextoForm">
 			<h2>¡Apúntate</h2>
-		</div>	
+		</div>
 		<div id="divForm">
 			<form>
 				<input id="inputName" type="text" name="nombre" placeholder="Tu nombre*" />
@@ -68,7 +72,7 @@
 				<input id="inputPoblación" type="text" name="poblacion" placeholder="Tu población" />
 				<input id="inputHablas" type="text" name="idiomasHablados" placeholder="¿Qué idioma/s hablas?*" />
 				<input id="inputAprendes" type="text" name="idiomasAprendes" placeholder="¿Cuál/es quieres aprender?*" />
-				<input type="submit" value="Regístrate" />	
+				<input type="submit" value="Regístrate" />
 			</form>
 		</div>
 	</section>
@@ -76,7 +80,7 @@
 			<div id="divTextoVision">
 			<h2>¡Nuestra visión</h2>
 			<p id="textoVision">En WeTalk. queremos ofrecer una nueva manera de aprender idiomas. Nuestro objetivo es fomentar un sistema de aprendizaje accesible y experiencial a través del intercambio de idiomas entre personas con intereses comunes, creando una plataforma donde poder encontrar personas afines a ti y experiencias en tu ciudad para compartir con ellas</p>
-		</div>	
+		</div>
 	</section>
 </main>
 <footer>
@@ -100,7 +104,7 @@
 				<p class="textoContacto">Twitter</p>
 			</span>
 			<div id="imagenFooter">
-				<img src="images/logo.png">
+				<img id="imgLogo2" src="images/logo.png">
 			</div>
 		</div>
 	</div>

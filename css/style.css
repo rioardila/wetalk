@@ -1,0 +1,78 @@
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  background-image: url("../images/imagen-header.jpg");
+  background-size: contain;
+}
+
+#divNav {
+  width: auto;
+  height: 280px;
+  display: block;
+}
+
+#divTextHeader {
+  width: auto;
+  height: 370px;
+  display: block;
+}
+
+#imgLogo1 {
+  padding: 50px 0px 0px 50px;
+  float: left;
+  display: inline;
+}
+
+#divNav nav {
+  display: inline;
+  position: relative;
+  left: -50px;
+}
+
+#divNavRight {
+  display: inline;
+  float: right;
+  position: relative;
+  top: 20px;
+}
+
+#buttonMenu, #divLang {
+  margin: 0px 25px 0px 25px;
+  display: inline;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  margin: 50px 25px 0px 25px;
+  position: relative;
+  top: 55px;
+}
+
+#buttonMenu {
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 1px #ffffff solid;
+  border-radius: 5px;
+}
