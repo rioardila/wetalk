@@ -197,6 +197,7 @@ main {
   color: #909090;
   font-family: 'AkkuratLight';
   font-size: 16px;
+  line-height: 21px;
 }
 
 /**********************************/
@@ -254,6 +255,23 @@ input[type="submit"] {
   cursor:pointer;
 }
 
+/**********************************/
+/************ SECTION3 ************/
+/**********************************/
+
+#section3 {
+  width: auto;
+  background-color: #f9f9f9;
+}
+
+#textoVision {
+  padding: 0px 20px 80px 20px;
+  color: #909090;
+  font-family: 'AkkuratLight';
+  font-size: 20px;
+  line-height: 28px;
+}
+
 /*RESPONSIVE*/
 @media screen and (max-width: 840px) {
   #divNav nav {
@@ -278,6 +296,10 @@ input[type="submit"] {
     width: 490px;
     margin: 0 auto 20px auto;
     display: block;
+  }
+
+  #textoVision {
+    padding-bottom: 60px;
   }
 }
 
