@@ -35,7 +35,7 @@
 
 						$("#nav3").click(function (){
                 $('html, body').animate({
-                    scrollTop: $("#contacto").offset().top
+                    scrollTop: $("#section3").offset().top
                 }, 1050);
             });
         });
@@ -44,7 +44,7 @@
 <body ng-app="">
 <header>
 	<div id="divNav">
-		<img id="imgLogo1" src="images/Logo.png" />
+		<img id="imgLogo1" src="images/Logo.png" onclick="location.reload();" />
 		<nav>
 			<ul style="list-style-type:none">
 				<li><a id="nav1" href="#">Cómo funciona</a></li>
@@ -126,19 +126,19 @@
 <footer>
 	<span id="spanContacto">Contacta con nosotros:</span>
 	<div id="divContacto">
-		<span id="spanEmail">
-			<img src="images/email.png">
+		<span id="spanEmail" onclick="window.open('https://gmail.com/', '_blank').focus();">
+			<img src="images/mail.png">
 			<p class="textoContacto">Email</p>
 		</span>
-		<span id="spanFacebook">
+		<span id="spanFacebook" onclick="window.open('https://facebook.com/', '_blank').focus();">
 			<img src="images/facebook.png">
 			<p class="textoContacto">Facebook</p>
 		</span>
-		<span id="spanInstagram">
+		<span id="spanInstagram" onclick="window.open('https://instagram.com/', '_blank').focus();">
 			<img src="images/instagram.png">
 			<p class="textoContacto">Instagram</p>
 		</span>
-		<span id="spanTwitter">
+		<span id="spanTwitter" onclick="window.open('https://twitter.com/', '_blank').focus();">
 			<img src="images/twitter.png">
 			<p class="textoContacto">Twitter</p>
 		</span>
