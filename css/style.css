@@ -374,6 +374,12 @@ footer {
     background-size: auto 100%;
   }
 
+  #divStep1, #divStep2, #divStep3 {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+  }
+
   input:not([type="submit"]) {
     width: 80% !important;
   }
