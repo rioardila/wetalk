@@ -255,6 +255,16 @@ input[type="submit"] {
   cursor:pointer;
 }
 
+.msgError {
+  color: #ff0000;
+}
+
+.msgExito {
+  color: #00ff00;
+  position: relative;
+  top: -20px;
+}
+
 /**********************************/
 /************ SECTION3 ************/
 /**********************************/
