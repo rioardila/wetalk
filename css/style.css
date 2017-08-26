@@ -61,7 +61,7 @@ header {
 #divNav nav {
   display: inline;
   position: relative;
-  left: -100px;
+  left: -125px;
 }
 
 #divNavRight {
@@ -107,6 +107,11 @@ nav ul li a:hover, #idiomaEs:hover, #idiomaEn:hover {
   border: 1px #ffffff solid;
   border-radius: 5px;
   cursor:pointer;
+}
+
+#buttonMenu:hover {
+  color: #7f58ad;
+  background-color: #ffffff;
 }
 
 #divTitle span {
@@ -216,7 +221,7 @@ main {
   top: -10px;
 }
 
-input {
+input, select {
   height: 30px;
   border: 1.4px solid #7f58ad;
   border-radius: 5px;
@@ -232,12 +237,17 @@ input {
 }
 
 #inputHablas, #inputAprendes {
-  width: 222px;
+  width: 245px;
+  height: 50px;
   margin: 0px 10px 20px 10px;
   display: inline-block;
 }
 
-input:focus {
+select option:first-child {
+  color: grey;
+}
+
+input:focus, select:focus {
   outline: none;
   border: 3.2px solid #7f58ad;
 }
@@ -344,6 +354,7 @@ footer {
 /**********************************/
 /*********** RESPONSIVE ***********/
 /**********************************/
+
 @media screen and (max-width: 840px) {
   #divNav nav {
     display: none;
@@ -363,8 +374,15 @@ footer {
     background-size: auto 100%;
   }
 
+  input:not([type="submit"]) {
+    width: 80% !important;
+  }
+
+  select {
+    width: 84% !important;
+  }
+
   #inputHablas, #inputAprendes {
-    width: 490px;
     margin: 0 auto 20px auto;
     display: block;
   }
@@ -372,6 +390,28 @@ footer {
   #textoVision {
     padding-bottom: 60px;
   }
+
+  footer {
+    display: block;
+  }
+
+  #spanContacto {
+    float: none;
+    padding: 10px;
+  }
+
+  #divContacto span {
+    display: block;
+    float: none;
+    position: relative;
+    top: -20px;
+
+    margin: 0;
+  }
+}
+
+#imgLogo2 {
+
 }
 
 @media screen and (max-width: 461px) {
