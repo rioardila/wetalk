@@ -59,9 +59,10 @@ header {
 }
 
 #divNav nav {
-  display: inline;
   position: relative;
-  left: -125px;
+  left: -100px;
+  display: inline;
+  margin: 0 auto;
 }
 
 #divNavRight {
@@ -97,6 +98,11 @@ nav ul li a:hover, #idiomaEs:hover, #idiomaEn:hover {
 
 #idiomaEs, #idiomaEn {
   cursor: pointer;
+}
+
+/*Only for using while EN is not available yet*/
+#idiomaEs {
+  border-bottom: 1px solid #ffffff;
 }
 
 #buttonMenu {
