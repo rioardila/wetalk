@@ -100,7 +100,7 @@
 			<span>¡Apúntate!</span>
 		</div>
 		<div id="divForm">
-			<form name="myForm">
+			<form name="myForm" action="signup.php" method="post">
 				<input id="inputName" type="text" name="nombre" ng-model="nombre" placeholder="Tu nombre*" required/>
 				<span class="msgError" ng-show="myForm.nombre.$touched && myForm.nombre.$invalid">Este campo es obligatorio</span>
 				<input id="inputEmail" type="email" name="email" ng-model="email" placeholder="Tu email*" required/>
