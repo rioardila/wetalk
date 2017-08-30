@@ -6,13 +6,14 @@
 	<meta name="author" content="co-authored by Alba Domínguez Pera, Aitor Ardila Bellés" />
 	<meta name="description" content="Realiza intercambios de idiomas mientras compartes tus aficiones. ¡Regístrate!" />
 	<meta name="keywords" content="wetalk, wetalkbcn, intercambio idiomas, language exchange, grupos intercambio, aprende idiomas, barcelona meetings" />
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<title>WeTalk</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<script>
     $(document).ready(function (){
+			  //Buttons scroll down
         $("#buttonMenu").click(function (){
             $('html, body').animate({
                 scrollTop: $("#section2").offset().top
@@ -37,6 +38,21 @@
             $('html, body').animate({
                 scrollTop: $("#section3").offset().top
             }, 1050);
+        });
+
+				//FORM submit
+				$('#myForm').submit(function (e) {
+          e.preventDefault();
+          $.ajax({
+            type: 'post',
+            url: 'signup.php',
+            data: $('#myForm').serialize(),
+            success: function (data) {
+							console.log(data);
+              var modal = document.getElementById('modal');
+							modal.style.display = "block";
+            }
+          });
         });
     	});
   </script>
@@ -155,7 +171,7 @@
 	</div>
 </footer>
 <!--MODAL CONTAINER-->
-<div id="modal" class="modal-container" ng-show="myForm.$submitted">
+<div id="modal" class="modal-container">
 	<div class="modal-box">
 		<span class="msgExito">¡Te has registrado con éxito! Pronto nos pondremos en contacto contigo.</span>
 	</div>

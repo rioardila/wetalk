@@ -16,9 +16,7 @@ if (!$success) {
     die("Couldn't enter data: ".$conn->error);
 
 }
-
-echo "Gracias por registrate. Pronto recibirás un email con más detalles. <br>";
-
+echo $success;
 $conn->close();
 
 ?>
