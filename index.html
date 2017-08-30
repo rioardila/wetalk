@@ -168,6 +168,13 @@
         modal.style.display = "none";
     }
 	}
+	//close modal when ESC pressed
+	document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        modal.style.display = "none";
+    }
+	}
 </script>
 </body>
 </html>
