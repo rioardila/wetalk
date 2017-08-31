@@ -263,7 +263,7 @@ input[type="submit"] {
   height: 41px;
   border: 0;
   border-radius: 5px;
-  margin: 0px auto 40px auto;
+  margin: 10px auto 25px auto;
   display: block !important;
   background-color: #7f58ad;
   cursor:pointer;
@@ -456,6 +456,10 @@ footer {
 
   input:not([type="submit"]) {
     width: 80% !important;
+  }
+
+  input[type="submit"] {
+    margin: 25px auto 20px auto;
   }
 
   #inputHablas, #inputAprendes {
