@@ -276,6 +276,10 @@ input[type="submit"] {
 
 }
 
+.msgUnder {
+  display: flex;
+}
+
 .modal-container {
   display: none;
   position: fixed;

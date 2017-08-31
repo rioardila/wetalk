@@ -134,9 +134,9 @@
 				<input id="inputTelefono" type="tel" name="telefono" placeholder="Tu teléfono (no olvides el prefijo si no es un número español)" />
 				<input id="inputPoblacion" type="text" name="poblacion" placeholder="Tu población" />
 				<input id="inputHablas" type="text" name="idiomasHablados" ng-model="hablados" placeholder="¿Qué idioma/s hablas?*" required />
-				<span class="msgError" ng-show="myForm.hablados.$touched && myForm.hablados.$invalid">Este campo es obligatorio</span>
+				<!--<span class="msgError msgUnder" ng-show="myForm.idiomasHablados.$touched && myForm.idiomasHablados.$invalid">Este campo es obligatorio</span>-->
 				<input id="inputAprendes" type="text" name="idiomasAprendes" ng-model="aprendes" placeholder="¿Cuál/es quieres aprender?*" required />
-				<span class="msgError" ng-show="myForm.aprendes.$touched && myForm.aprendes.$invalid">Este campo es obligatorio</span>
+				<!--<span class="msgError msgUnder" ng-show="myForm.idiomasAprendes.$touched && myForm.idiomasAprendes.$invalid">Este campo es obligatorio</span>-->
 				<input type="submit" value="Regístrate" />
 			</form>
 		</div>
