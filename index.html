@@ -185,12 +185,19 @@
 <!--CLOSE MODAL-->
 <script>
   var modal = document.getElementById('modal');
+	var exit = document.getElementById('imgCross');
 	window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
 				location.reload();
     }
 	}
+	//close modal when click X
+	exit.onclick = function(event) {
+		modal.style.display = "none";
+		location.reload();
+	}
+
 	//close modal when ESC pressed
 	document.onkeydown = function(evt) {
     evt = evt || window.event;
