@@ -228,7 +228,7 @@ main {
   top: -10px;
 }
 
-input {
+input, button[type="submit"] {
   height: 30px;
   border: 1.4px solid #7f58ad;
   border-radius: 5px;
@@ -254,7 +254,7 @@ input:focus, select:focus {
   border: 3.2px solid #7f58ad;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   color: #ffffff;
   font-family: 'CircularStdBook';
   font-size: 20px;
@@ -454,11 +454,11 @@ footer {
     width: 75%;
   }
 
-  input:not([type="submit"]) {
+  input {
     width: 80% !important;
   }
 
-  input[type="submit"] {
+  button[type="submit"] {
     margin: 25px auto 20px auto;
   }
 
