@@ -87,13 +87,13 @@
 		<img id="imgLogo1" src="images/Logo.png" onclick="location.reload();" />
 		<nav>
 			<ul style="list-style-type:none">
-				<li><a id="nav1" href="#" tkey="comoFunciona"></a></li>
-				<li><a id="nav2" href="#" tkey="vision"></a></li>
-				<li><a id="nav3" href="#" tkey="contacto"></a></li>
+				<li><a id="nav1" href="#" tkey="comoFunciona">Cómo funciona</a></li>
+				<li><a id="nav2" href="#" tkey="vision">Visión</a></li>
+				<li><a id="nav3" href="#" tkey="contacto">Contacto</a></li>
 			</ul>
 		</nav>
 		<div id="divNavRight">
-				<button id="buttonMenu" tkey="signup"></button>
+				<button id="buttonMenu" tkey="signup">Regístrate</button>
 				<div id="divLang">
 					<span id="idiomaEs">ES</span> /
 					<span id="idiomaEn">EN</span>
@@ -102,69 +102,69 @@
 	</div>
 	<div id="divTextHeader">
 		<div id="divTitle">
-			<span tkey="headerTitle"></span>
+			<span tkey="headerTitle">Conecta, diviértete y aprende idiomas</span>
 		</div>
 		<div id="divSubtitle">
-			<span tkey="headerSubtitle"></span>
+			<span tkey="headerSubtitle">Realiza intercambios de idiomas mientras compartes tus aficiones</span>
 		</div>
 		<div id="divButton">
-			<button id="buttonHeader" tkey="signup"></button>
+			<button id="buttonHeader" tkey="signup">Regístrate</button>
 		</div>
 	</div>
 </header>
 <main>
 	<section id="section1">
 		<div class="divTextoFunciona">
-			<span tkey="comoFunciona"></span>
+			<span tkey="comoFunciona">¿Cómo funciona?</span>
 		</div>
 		<div id="divSteps">
 			<div id="divStep1">
 				<img class="imageFunciona" src="images/monitor.png" width="80px">
-				<span class="funcionaTitle" tkey="signup"></span>
-				<p class="parrafoFunciona" tkey="unete"></p>
+				<span class="funcionaTitle" tkey="signup">Regístrate</span>
+				<p class="parrafoFunciona" tkey="unete">¡Únete a nuestra comunidad! Una vez te registres te añadiremos a tu grupo de WhatsApp correspondiente, plataforma en construcción.</p>
 			</div>
 			<div id="divStep2">
 				<img class="imageFunciona" src="images/chat.png" width="80px">
-				<span class="funcionaTitle" tkey="hablanosdeti"></span>
-				<p class="parrafoFunciona" tkey="presentate"></p>
+				<span class="funcionaTitle" tkey="hablanosdeti">Háblanos de ti</span>
+				<p class="parrafoFunciona" tkey="presentate">Preséntate en el grupo y explicanos qué idioma hablas, que idioma quieres aprender y alguna de tus aficiones.</p>
 			</div>
 			<div id="divStep3">
 				<img class="imageFunciona" src="images/teamwork.png" width="80px">
-				<span class="funcionaTitle" tkey="empiezaAprender"></span>
-				<p class="parrafoFunciona" tkey="teAyudaremos"></p>
+				<span class="funcionaTitle" tkey="empiezaAprender">¡Empieza a aprender!</span>
+				<p class="parrafoFunciona" tkey="teAyudaremos">Te ayudaremos a conectar con personas afines a ti con las que podrás practicar cualquier idioma y aprender mientras realizas planes en tu ciudad.</p>
 			</div>
 		</div>
 	</section>
 	<section id="section2">
 		<div class="divTextoFunciona">
-			<span tkey="apuntate"></span>
+			<span tkey="apuntate">¡Apúntate!</span>
 		</div>
 		<div id="divForm">
 			<form id="myForm" name="myForm" method="post">
 				<input id="inputName" type="text" name="nombre" ng-model="nombre" placeholder="Tu nombre*" tkey="nombre" required/>
-				<span class="msgError" ng-show="myForm.nombre.$touched && myForm.nombre.$invalid" tkey="campoRequerido"></span>
+				<span class="msgError" ng-show="myForm.nombre.$touched && myForm.nombre.$invalid" tkey="campoRequerido">Este campo es obligatorio</span>
 				<input id="inputEmail" type="email" name="email" ng-model="email" placeholder="Tu email*" tkey="email" required/>
-				<span class="msgError" ng-show="myForm.email.$touched && myForm.email.$invalid" tkey="correoValido"></span>
+				<span class="msgError" ng-show="myForm.email.$touched && myForm.email.$invalid" tkey="correoValido">Escribe una dirección de correo válida</span>
 				<input id="inputTelefono" type="tel" name="telefono" placeholder="Tu teléfono (no olvides el prefijo si no es un número español)" tkey="telefono" />
 				<input id="inputPoblacion" type="text" name="poblacion" placeholder="Tu población" tkey="poblacion" />
 				<input id="inputHablas" type="text" name="idiomasHablados" ng-model="hablados" placeholder="¿Qué idioma/s hablas?*" tkey="idiomasHablados" required />
 				<!--<span class="msgError msgUnder" ng-show="myForm.idiomasHablados.$touched && myForm.idiomasHablados.$invalid">Este campo es obligatorio</span>-->
 				<input id="inputAprendes" type="text" name="idiomasAprendes" ng-model="aprendes" placeholder="¿Cuál/es quieres aprender?*" tkey="idiomasAprendes" required />
 				<!--<span class="msgError msgUnder" ng-show="myForm.idiomasAprendes.$touched && myForm.idiomasAprendes.$invalid">Este campo es obligatorio</span>-->
-				<button type="submit" tkey="signup"></button
+				<button type="submit" tkey="signup">Regístrate</button
 			</form>
 		</div>
 	</section>
 	<section id="section3">
 			<div class="divTextoFunciona">
-			<span tkey="nuestraVision"></span>
-			<p id="textoVision" tkey="textoVision"></p>
+			<span tkey="nuestraVision">Nuestra visión</span>
+			<p id="textoVision" tkey="textoVision">En WeTalk. queremos ofrecer una nueva manera de aprender idiomas. Nuestro objetivo es fomentar un sistema de aprendizaje accesible, a través del intercambio de idiomas. Te conectamos a personas afines para que vivas experiencias únicas.</p>
 		</div>
 	</section>
 </main>
 <footer>
 	<img id="imgLogo2" src="images/Logo.png">
-	<span id="spanContacto" tkey="contactaNosotros"></span>
+	<span id="spanContacto" tkey="contactaNosotros">Contacta con nosotros:</span>
 	<div id="divContacto">
 		<span id="spanEmail" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=hey@wetalk.io', '_blank').focus();">
 			<img src="images/mail.png">
@@ -192,7 +192,7 @@
 		</div>
 		<div class="modal-box-content">
 			<span class="msgTitle" tkey="felicidades">¡Felicidades!<br> Ya estás registrado</span>
-			<span class="msgExito" tkey="msgExito"></span>
+			<span class="msgExito" tkey="msgExito">En breves recibirás un email de bienvenida y podrás empezar a disfrutar y aprender.</span>
 		</div>
 	</div>
 </div>
