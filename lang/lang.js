@@ -1,4 +1,4 @@
-var langs = ['en'];
+var langs = ['en', 'es'];
 var langCode = '';
 
 var translate = function (jsdata) {
@@ -20,4 +20,7 @@ langCode = navigator.language.substr (0, 2);
 
 if (langs.indexOf(langCode) != -1) {
 	$.getJSON('lang/'+langCode+'.json', translate);
+}
+else {
+	$.getJSON('lang/en.json', translate);
 }
