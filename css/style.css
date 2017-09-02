@@ -100,11 +100,6 @@ nav ul li a:hover, #idiomaEs:hover, #idiomaEn:hover {
   cursor: pointer;
 }
 
-/*Only for using while EN is not available yet*/
-#idiomaEs {
-  border-bottom: 1px solid #ffffff;
-}
-
 #buttonMenu {
   padding: 4px 18px;
   color: #ffffff;
