@@ -6,10 +6,12 @@
 	<meta name="author" content="co-authored by Alba Domínguez Pera, Aitor Ardila Bellés" />
 	<meta name="description" content="Realiza intercambios de idiomas mientras compartes tus aficiones. ¡Regístrate!" />
 	<meta name="keywords" content="wetalk, wetalkbcn, intercambio idiomas, language exchange, grupos intercambio, aprende idiomas, barcelona meetings" />
+	<title>WeTalk</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<title>WeTalk</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery.viewportchecker.min.js"></script>
 	<script src="lang/lang.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
 	<script>
@@ -40,6 +42,12 @@
                 scrollTop: $("#section3").offset().top
             }, 1050);
         });
+
+				//ADDS ANIMATION (fadein)
+				$(".animatedItem").addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn',
+        offset: 100
+       });
 
 				//FORM submit
 				$('#myForm').submit(function (e) {
@@ -129,24 +137,24 @@
 			<span tkey="comoFunciona">¿Cómo funciona?</span>
 		</div>
 		<div id="divSteps">
-			<div id="divStep1">
+			<div id="divStep1" class="animatedItem">
 				<img class="imageFunciona" src="images/monitor.png" width="80px">
 				<span class="funcionaTitle" tkey="signup">Regístrate</span>
 				<p class="parrafoFunciona" tkey="unete">¡Únete a nuestra comunidad! Una vez te registres te añadiremos a tu grupo de WhatsApp correspondiente, plataforma en construcción.</p>
 			</div>
-			<div id="divStep2">
+			<div id="divStep2" class="animatedItem">
 				<img class="imageFunciona" src="images/chat.png" width="80px">
 				<span class="funcionaTitle" tkey="hablanosdeti">Háblanos de ti</span>
 				<p class="parrafoFunciona" tkey="presentate">Preséntate en el grupo y explicanos qué idioma hablas, que idioma quieres aprender y alguna de tus aficiones.</p>
 			</div>
-			<div id="divStep3">
+			<div id="divStep3" class="animatedItem">
 				<img class="imageFunciona" src="images/teamwork.png" width="80px">
 				<span class="funcionaTitle" tkey="empiezaAprender">¡Empieza a aprender!</span>
 				<p class="parrafoFunciona" tkey="teAyudaremos">Te ayudaremos a conectar con personas afines a ti con las que podrás practicar cualquier idioma y aprender mientras realizas planes en tu ciudad.</p>
 			</div>
 		</div>
 	</section>
-	<section id="section2">
+	<section id="section2" class="animatedItem">
 		<div class="divTextoFunciona">
 			<span tkey="apuntate">¡Apúntate!</span>
 		</div>
@@ -166,7 +174,7 @@
 			</form>
 		</div>
 	</section>
-	<section id="section3">
+	<section id="section3" class="animatedItem">
 			<div class="divTextoFunciona">
 			<span tkey="nuestraVision">Nuestra visión</span>
 			<p id="textoVision" tkey="textoVision">En WeTalk. queremos ofrecer una nueva manera de aprender idiomas. Nuestro objetivo es fomentar un sistema de aprendizaje accesible, a través del intercambio de idiomas. Te conectamos a personas afines para que vivas experiencias únicas.</p>
