@@ -18,9 +18,12 @@ var translate = function (jsdata) {
 langCode = navigator.language.substr (0, 2);
 //langCode = 'en';
 
-if (langs.indexOf(langCode) != -1) {
+if (langs.indexOf(langCode) != -1) { //Show in Spanish or English
 	$.getJSON('lang/'+langCode+'.json', translate);
 }
-else {
+else if(langCode == 'ca') { //show in Spanish when lang is Catalan
+	$.getJSON('lang/es.json', translate);
+}
+else { //Otherwise show in English
 	$.getJSON('lang/en.json', translate);
 }

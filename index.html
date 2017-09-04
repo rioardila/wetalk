@@ -69,6 +69,17 @@
 					$('#idiomaEs').css('border-bottom', '1px solid #ffffff');
 					$('#idiomaEn').css('border-bottom', '0');
 				});
+
+				//Underline language once document is ready
+				var langCodeHTML = navigator.language.substr(0, 2);
+				if (langCodeHTML == 'es' || langCodeHTML == 'ca') { //choose Spanish
+					$('#idiomaEs').css('border-bottom', '1px solid #ffffff');
+					$('#idiomaEn').css('border-bottom', '0');
+				}
+				else { //choose English
+					$('#idiomaEn').css('border-bottom', '1px solid #ffffff');
+					$('#idiomaEs').css('border-bottom', '0');
+				}
     	});
   </script>
 	<script>
