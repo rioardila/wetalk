@@ -13,7 +13,7 @@
     "apuntate" : "¡Apúntate!",
     "nombre" : "Tu nombre*",
     "email" : "Tu email*",
-    "telefono" : "Tu teléfono (no olvides el prefijo si no es un número español)",
+    "telefono" : "Tu teléfono (no olvides el prefijo)",
     "poblacion" : "Tu población",
     "idiomasHablados" : "¿Qué idioma/s hablas?*",
     "idiomasAprendes" : "¿Cuál/es quieres aprender?*",
