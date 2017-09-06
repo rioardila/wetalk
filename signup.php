@@ -14,8 +14,10 @@ $values = $result->fetch_array(MYSQLI_NUM);
 $num_rows = $values[0];
 
 if($num_rows < 1) {
-  $query   = "INSERT into form_users (name,email,phone,city,languageSpoken,languageLearnt) VALUES('" . $nombre . "','" . $email . "',
-    '" . $telefono . "','" . $poblacion . "','" . $idiomasHablados . "','" . $idiomasAprendes . "')";
+  $now = new DateTime();
+  $now = $now->format('Y-m-d H:i:s');
+  $query   = "INSERT into form_users (name,email,phone,city,languageSpoken,languageLearnt,creationDate) VALUES('" . $nombre . "','" . $email . "',
+    '" . $telefono . "','" . $poblacion . "','" . $idiomasHablados . "','" . $idiomasAprendes . "','" . $now . "')";
   $success = $conn->query($query);
 
   if (!$success) {
@@ -24,6 +26,6 @@ if($num_rows < 1) {
   }
   $conn->close();
 }
-echo 1;
+echo $now;
 
 ?>
