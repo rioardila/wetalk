@@ -423,6 +423,18 @@ footer {
   float: right;
 }
 
+#cookiescript_injected {
+  padding: 15px 0px 0px !important;
+}
+
+#cookiescript_header {
+  color: #7f58ad !important;
+}
+
+#cookiescript_link {
+  opacity: 0 !important;
+}
+
 /**********************************/
 /*********** RESPONSIVE ***********/
 /**********************************/
